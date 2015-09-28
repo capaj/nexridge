@@ -1,0 +1,27 @@
+{
+  "name": "nexridge",
+  "version": "0.0.1",
+  "description": "knex.js powered framework for querying your SQL DB over socket.io",
+  "main": "nexridge.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capaj/nexridge.git"
+  },
+  "keywords": [
+    "knex",
+    "sql",
+    "query",
+    "builder",
+    "socket.io",
+    "websocket"
+  ],
+  "author": "capajj@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/capaj/nexridge/issues"
+  },
+  "homepage": "https://github.com/capaj/nexridge#readme"
+}

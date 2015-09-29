@@ -11,9 +11,9 @@ module.exports = {
     var rpcApp = RPC.apply(RPC, arguments)
     rpcApp.expose({
       nexridge: {
-        query: function query(JSON) {
+        query: function query(queryPayload) {
           let q = db.queryBuilder()
-          _.merge(q, JSON)
+          _.merge(q, queryPayload)
           return q
         }
       }

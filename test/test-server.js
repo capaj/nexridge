@@ -1,7 +1,7 @@
 var nexridge = require('../nexridge')
 
 nexridge.connect({
-  client: 'mysql2',
+  client: 'mariasql',
   connection: {
     host     : '127.0.0.1',
     user     : 'travis',

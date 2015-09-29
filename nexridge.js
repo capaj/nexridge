@@ -10,10 +10,12 @@ module.exports = {
   listen: function listen() {
     var rpcApp = RPC.apply(RPC, arguments)
     rpcApp.expose({
-      query: function query(JSON){
-        let q = db.queryBuilder()
-        _.merge(q, JSON)
-        return q
+      nexridge: {
+        query: function query(JSON) {
+          let q = db.queryBuilder()
+          _.merge(q, JSON)
+          return q
+        }
       }
     })
   },

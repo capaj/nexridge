@@ -14,7 +14,7 @@ module.exports = {
         query: function query(queryPayload) {
           let q = db.queryBuilder()
           _.merge(q, queryPayload)
-          return q
+          return q  // then() is called by socket.io-rpc Promise.resolve, so the query is called even though it seems like it is not
         }
       }
     })

@@ -1,11 +1,12 @@
 {
   "name": "nexridge",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "knex.js powered framework for querying your SQL DB over socket.io",
   "main": "nexridge.js",
   "scripts": {
     "test": "mocha",
-    "style": "node_modules/.bin/standard"
+    "pretest": "node_modules/.bin/standard",
+    "precommit": "npm test"
   },
   "repository": {
     "type": "git",
@@ -30,8 +31,10 @@
   },
   "devDependencies": {
     "chai": "^3.2.0",
+    "husky": "^0.10.1",
     "mocha": "^2.2.5",
     "morgan": "^1.6.1",
+    "mysql2": "^0.15.8",
     "nexridge-client": "^0.0.1",
     "standard": "^5.3.1"
   },

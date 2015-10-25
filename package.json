@@ -30,9 +30,10 @@
     "socket.io-rpc": "^0.9.9"
   },
   "devDependencies": {
-    "chai": "^3.2.0",
+    "chai": "^3.4.0",
     "husky": "^0.10.1",
     "mocha": "^2.2.5",
+    "mockery": "^1.4.0",
     "morgan": "^1.6.1",
     "mysql2": "^0.15.8",
     "nexridge-client": "^0.0.1",
